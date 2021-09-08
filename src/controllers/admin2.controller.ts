@@ -64,3 +64,4 @@ export class Admin2Controller {
 
     return savedUser;
 }
+}
