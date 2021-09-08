@@ -20,7 +20,7 @@ import {
 } from '@loopback/rest';
 import {Task} from '../models';
 import {TaskRepository} from '../repositories';
-@authenticate('jwt') 
+@authenticate('jwt')
 export class TaskController {
   constructor(
     @repository(TaskRepository)
@@ -149,3 +149,5 @@ export class TaskController {
     await this.taskRepository.deleteById(id);
   }
 }
+
+
